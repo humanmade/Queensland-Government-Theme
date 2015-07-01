@@ -68,7 +68,9 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
-			'main' => __( 'Main Menu', 'qldgovt' ),
+			'header' => __( 'Header Menu', 'qldgovt' ),
+			'main'   => __( 'Main Menu', 'qldgovt' ),
+			'footer' => __( 'Footer Menu', 'qldgovt' ),
 		) );
 
 		/*
@@ -86,3 +88,11 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 endif; // qldgovt_setup
 
 add_action( 'after_setup_theme', 'qldgovt_setup' );
+
+if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
+	function qldgovt_enqueue_scripts() {
+		wp_enqueue_script( 'jquery' );
+	}
+}
+
+add_action( 'wp_enqueue_script', 'qldgovt_enqueue_scripts' );
