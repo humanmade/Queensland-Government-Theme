@@ -92,6 +92,8 @@ add_action( 'after_setup_theme', 'qldgovt_setup' );
 if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 	function qldgovt_enqueue_scripts() {
 		wp_enqueue_script( 'jquery' );
+		wp_register_script( 'qg', get_template_directory_uri() . '/assets/js/qg.js', array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'qg' );
 	}
 }
 
