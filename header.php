@@ -16,7 +16,6 @@
 	<link href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/layout-large.css" media="only all and (min-width: 65em)" rel="stylesheet" type="text/css"/>
 
 	<!--[if lt IE 9]>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script>
 	<![endif]-->
 
