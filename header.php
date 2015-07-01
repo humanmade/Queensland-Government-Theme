@@ -27,13 +27,13 @@
 <body id="qld-gov-au">
 
 <!--[if lt IE 9]><script type="text/javascript">jQuery && jQuery.transformer({addClasses:true})</script><![endif]-->
+
 <div id="access">
-	<h2>Skip links and keyboard navigation</h2>
+	<h2><?php __( 'Skip links and keyboard navigation', 'qldgovt' ); ?></h2>
 	<ul>
-		<li><a href="#content">Skip to content</a></li>
-		<li><a href="#nav-site">Skip to navigation</a></li>
-		<li><a href="#footer">Skip to footer</a></li>
-		<li><a href="http://www.qld.gov.au/help/accessibility/keyboard.html#section-aria-keyboard-navigation">Use tab and cursor keys to move around the page (more information)</a></li>
+		<li><a href="#content"><?php __( 'Skip to content', 'qldgovt' ); ?></a></li>
+		<li><a href="#nav-site"><?php __( 'Skip to navigation', 'qldgovt' ); ?></a></li>
+		<li><a href="#footer"><?php __( 'Skip to footer', 'qldgovt' ); ?></a></li>
 	</ul>
 </div>
 
