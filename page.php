@@ -84,8 +84,8 @@ the_post();
 				</form>
 			</div>
 
-		</div>
-	</div>
-</div>
+		</div><!-- #content-container -->
+	</div><!-- .max-width -->
+</div><!-- #page-container -->
 
 <?php get_footer(); ?>
