@@ -15,9 +15,6 @@
 	<link href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/layout-medium.css" media="only all and (min-width: 43em) and (max-width: 65em)" rel="stylesheet" type="text/css"/>
 	<link href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/layout-large.css" media="only all and (min-width: 65em)" rel="stylesheet" type="text/css"/>
 
-	<link rel="shortcut icon" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/images/favicon.ico"/>
-
-
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script>
