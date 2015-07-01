@@ -42,24 +42,16 @@
 				<img src="cue/images/qg-coa-print.png" class="print-version" alt=""/>
 			</a>
 
-			<ul id="tools">
-				<li><a accesskey="3" href="http://www.qld.gov.au/#sitemap">Site map</a></li>
-				<li><a accesskey="4" href="http://www.qld.gov.au/contact/">Contact us</a></li>
-				<li><a href="http://www.qld.gov.au/help/">Help</a></li>
-				<li class="last-child">
-					<form action="http://pan.search.qld.gov.au/search/search.cgi" id="search-form">
-						<div class="search-wrapper">
-							<label for="search-query">Search Queensland Government</label>
-							<input accesskey="5" type="text" name="query" id="search-query" size="27" value=""/>
-							<input type="submit" class="submit" value="Search"/>
-							<input type="hidden" name="num_ranks" value="10"/>
-							<input type="hidden" name="tiers" value="off"/>
-							<input type="hidden" name="collection" value="qld-gov"/>
-							<input type="hidden" name="profile" value="qld"/>
-						</div>
-					</form>
-				</li>
-			</ul>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location'  => 'header',
+					'menu_id'         => 'tools',
+					'fallback_cb'     => '',
+					'items_wrap'      => '<ul id="tools">%3$s<li class="last-child"></li></li>' .  qldgovt_header_searchform() . '</ul>',
+				)
+			);
+			?>
 
 			<h2 id="site-name"><a href="/" accesskey="2">
 					<!--[if gte IE 7]><!--><img src="theme/site-name.png" height="28" alt="Site name"/><!--<![endif]-->

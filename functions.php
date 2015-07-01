@@ -100,3 +100,22 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 }
 
 add_action( 'wp_enqueue_scripts', 'qldgovt_enqueue_scripts' );
+
+/**
+ * Header menu uses a slightly different search form
+ */
+if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
+	function qldgovt_header_searchform(){
+
+		$searchform =
+		'<li class="last-item">
+			<form action="' . esc_url( home_url( '/' ) ) . '" id="search-form">
+				<label for="search-query"></label>
+				<input type="text" id="search-query" size="27" value="' . get_search_query() . '">
+				<input type="submit" class="submit" value="Search">
+			</form>
+		</li>';
+
+		return $searchform;
+	}
+}
