@@ -85,15 +85,7 @@
 		</div></div>
 </div>
 
-
-
-<!--[if gte IE 9]><!-->
-<script type="text/javascript"><!--
-	// OPTIONAL: manually specify the current page title (to determine which menus are open onload)
-	//var currentPageTitle = '_INSERT_PAGE_TITLE_HERE_';
-	--></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"> </script>
-<!--<![endif]-->
 <script type="text/javascript" src="cue/js/qg.js"> </script>
-
+<?php wp_footer(); ?>
 </body>
 </html>
