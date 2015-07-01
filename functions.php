@@ -95,4 +95,4 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 	}
 }
 
-add_action( 'wp_enqueue_script', 'qldgovt_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'qldgovt_enqueue_scripts' );
