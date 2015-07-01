@@ -2,13 +2,14 @@
 
 <div id="page-container">
 	<div class="max-width">
-		<div id="nav-section">
-			<div class="box-sizing">
 
-				<!-- @TODO left sidebar widgets -->
+		<?php if ( is_active_sidebar( 'home-primary' ) ) { ?>
 
-			</div><!-- .box-sizing -->
-		</div><!-- #nav-section -->
+			<div id="nav-section">
+				<?php dynamic_sidebar( 'home-primary' ); ?>
+			</div><!-- #nav-section -->
+
+		<?php } ?>
 
 		<div id="content-container">
 
@@ -20,13 +21,13 @@
 
 			<?php endwhile; ?>
 
-			<!-- @TODO right hand sidebar widgets -->
-			<div class="aside">
-				<div class="box-sizing">
-					<h2>Supplementary content</h2>
-					<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+			<?php if ( is_active_sidebar( 'home-secondary' ) ) { ?>
+
+				<div class="aside">
+					<?php dynamic_sidebar( 'home-secondary' ); ?>
 				</div>
-			</div>
+
+			<?php } ?>
 
 		</div><!-- #content-container -->
 	</div><!-- .max-width -->
