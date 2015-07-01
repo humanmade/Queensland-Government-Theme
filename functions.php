@@ -68,7 +68,9 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
-			'main' => __( 'Main Menu', 'qldgovt' ),
+			'header' => __( 'Header Menu', 'qldgovt' ),
+			'main'   => __( 'Main Menu', 'qldgovt' ),
+			'footer' => __( 'Footer Menu', 'qldgovt' ),
 		) );
 
 		/*
