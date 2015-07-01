@@ -70,15 +70,9 @@
 
 	<div class="max-width"><div class="box-sizing">
 			<h2>Site footer</h2>
-			<ul>
-				<li class="legal"><a href="http://www.qld.gov.au/legal/copyright/">Copyright</a></li>
-				<li class="legal"><a href="http://www.qld.gov.au/legal/disclaimer/">Disclaimer</a></li>
-				<li class="legal"><a href="http://www.qld.gov.au/legal/privacy/">Privacy</a></li>
-				<li class="legal"><a href="http://www.qld.gov.au/right-to-information/">Right to information</a></li>
-				<li><a href="http://www.qld.gov.au/help/access/">Accessibility</a></li>
-				<li><a href="http://www.smartjobs.qld.gov.au/">Jobs in Queensland Government</a></li>
-				<li id="languages"><a href="http://www.qld.gov.au/languages/">Other languages</a></li>
-			</ul>
+			<?php wp_nav_menu( array(
+				'theme_location' => 'footer',
+			) ); ?>
 			<p class="legal">© The State of Queensland (agency name) 2010–2013</p>
 			<p><a href="http://www.qld.gov.au/" accesskey="1">Queensland Government</a></p>
 			<div id="qg-branding"><p><img class="tagline" src="theme/qg-tagline-footer.png" alt="Great state. Great opportunity."/></p></div>
