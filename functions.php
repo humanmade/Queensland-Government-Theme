@@ -96,3 +96,20 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 }
 
 add_action( 'wp_enqueue_script', 'qldgovt_enqueue_scripts' );
+
+/**
+ * Register the widget areas.
+ *
+ */
+function qldgovt_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Footer Widget Area', 'qldgovt' ),
+		'id'            => 'footer-widget-area',
+		'description'   => __( 'Footer widget area', 'twentyfourteen' ),
+		'before_widget' => '<div id="%1$s" class="section widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'qldgovt_widgets_init' );
