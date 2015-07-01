@@ -8,12 +8,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg.css" media="all"/>
-	<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" /><![endif]-->
-
-	<link href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/layout-small.css" media="all" rel="stylesheet" type="text/css"/>
-	<link href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/layout-medium.css" media="only all and (min-width: 43em) and (max-width: 65em)" rel="stylesheet" type="text/css"/>
-	<link href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/layout-large.css" media="only all and (min-width: 65em)" rel="stylesheet" type="text/css"/>
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" />
+	<![endif]-->
 
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script>
