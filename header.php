@@ -7,7 +7,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>CUE template : Queensland Government</title>
 
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg.css" media="all"/>
 	<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" /><![endif]-->
