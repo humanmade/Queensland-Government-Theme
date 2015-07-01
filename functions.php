@@ -107,7 +107,7 @@ function qldgovt_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'qldgovt' ),
 		'id'            => 'footer-widget-area',
-		'description'   => __( 'Footer widget area', 'twentyfourteen' ),
+		'description'   => __( 'Footer widget area', 'qldgovt' ),
 		'before_widget' => '<div id="%1$s" class="section widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
