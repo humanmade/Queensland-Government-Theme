@@ -39,7 +39,7 @@ the_post();
 					<li><a href="index.html">Menu item</a></li>
 				</ul>
 
-				<!-- @TODO left sidebar widgets -->
+				<?php dynamic_sidebar( 'single-primary' ); ?>
 
 			</div><!-- .box-sizing -->
 		</div><!-- #nav-section -->
