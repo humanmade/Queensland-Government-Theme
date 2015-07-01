@@ -22,6 +22,9 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script>
 	<![endif]-->
+
+	<?php wp_head(); ?>
+
 </head>
 
 <body id="qld-gov-au">
