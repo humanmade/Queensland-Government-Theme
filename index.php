@@ -15,7 +15,6 @@
 
 
 	<!--[if lt IE 9]>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 	<script type="text/javascript" src="cue/js/ie-layout.js"></script>
 	<![endif]-->
 </head>

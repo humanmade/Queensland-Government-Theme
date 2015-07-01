@@ -88,3 +88,11 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 endif; // qldgovt_setup
 
 add_action( 'after_setup_theme', 'qldgovt_setup' );
+
+if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
+	function qldgovt_enqueue_scripts() {
+		wp_enqueue_script( 'jquery' );
+	}
+}
+
+add_action( 'wp_enqueue_script', 'qldgovt_enqueue_scripts' );
