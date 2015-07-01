@@ -44,45 +44,11 @@ the_post();
 			</div><!-- .box-sizing -->
 		</div><!-- #nav-section -->
 
-		<!-- @TODO breadcrumbs -->
 		<div id="content-container">
-			<div id="breadcrumbs">
 
-				<h2>You are here:</h2>
-				<ol>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="index.html">Menu item</a></li>
-					<li><a href="index.html">Menu item</a></li>
-					<li class="last-child"><?php the_title(); ?></li>
-				</ol>
+			<?php get_template_part( 'breadcrumbs' ); ?>
 
-			</div><!-- #breadcrumbs -->
-
-			<div id="content">
-				<div class="article">
-					<div class="box-sizing">
-
-						<h1><?php the_title(); ?></h1>
-
-						<div class="page-options" id="pre-page-options">
-							<ul>
-								<li><a href="#"><?php esc_html_e( 'Share' ,'hmcue' ); ?></a></li>
-								<li><a href="<?php echo esc_url( get_post_comments_feed_link() ); ?>"><?php esc_html_e( 'Subscribe' ,'hmcue' ); ?></a>
-									<ul>
-										<li><a href="<?php echo esc_url( get_post_comments_feed_link() ); ?>"><?php esc_html_e( 'RSS feed', 'hmcue' ); ?></a></li>
-										<li><a href="<?php echo esc_url( get_post_comments_feed_link( null, 'atom' ) ); ?>"><?php esc_html_e( 'Atom feed', 'hmcue' ); ?></a></li>
-										<!--<li><a href="#">Email newsletter</a></li>-->
-									</ul>
-								</li>
-							</ul>
-						</div><!-- .page-options -->
-						<div class="section">
-							<?php the_content(); ?>
-						</div><!-- .section -->
-
-					</div><!-- .box-sizing -->
-				</div><!-- .article -->
-			</div><!-- #content -->
+			<?php get_template_part( 'content', get_post_type() ); ?>
 
 			<!-- @TODO right hand sidebar widgets -->
 			<div class="aside">
@@ -92,14 +58,7 @@ the_post();
 				</div>
 			</div>
 
-			<div id="document-properties">
-				<div class="box-sizing">
-					<dl>
-						<dt><?php esc_html_e( 'Last updated', 'hmcue' ); ?></dt>
-						<dd><?php the_modified_date(); ?></dd>
-					</dl>
-				</div>
-			</div><!-- #document-properties -->
+			<?php get_template_part( 'properties' ); ?>
 
 			<!-- @TODO comments -->
 			<div id="page-feedback">
