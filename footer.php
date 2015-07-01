@@ -18,8 +18,6 @@
 			<div id="qg-branding"><p><img class="tagline" src="theme/qg-tagline-footer.png" alt="Great state. Great opportunity."/></p></div>
 		</div></div>
 </div>
-
-<script type="text/javascript" src="cue/js/qg.js"> </script>
 <?php wp_footer(); ?>
 </body>
 </html>
