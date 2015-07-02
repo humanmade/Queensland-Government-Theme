@@ -54,11 +54,11 @@
 			?>
 
 
-			<h2 id="site-name"><a href="/" accesskey="2">
-					<!--[if gte IE 7]><!--><img src="theme/site-name.png" height="28" alt="Site name"/><!--<![endif]-->
-					<!--[if lte IE 6]><img src="theme/site-name-ie6.png" height="28" alt="Site name"/><![endif]-->
-					<img src="theme/site-name-print.png" height="28" class="print-version" alt=""/>
-				</a></h2>
+			<h2 id="site-name">
+				<a href="/" accesskey="2">
+					<p><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
+				</a>
+			</h2>
 		</div></div></div>
 
 
