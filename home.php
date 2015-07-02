@@ -15,11 +15,15 @@
 
 			<?php get_template_part( 'parts/breadcrumbs' ); ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div id="content">
 
-				<?php get_template_part( 'parts/loop', get_post_type() ); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; ?>
+					<?php get_template_part( 'parts/loop', get_post_type() ); ?>
+
+				<?php endwhile; ?>
+
+			</div><!-- #content -->
 
 			<?php if ( is_active_sidebar( 'home-secondary' ) ) { ?>
 
