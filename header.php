@@ -9,7 +9,7 @@ $suffix = SCRIPT_DEBUG ? '' : '.min';
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-	<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" /><![endif]-->
+	<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie<?php echo $suffix; ?>.css" type="text/css" media="all" /><![endif]-->
 	<!--[if lt IE 9]><script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout<?php echo $suffix; ?>.js"></script><![endif]-->
 	<?php wp_head(); ?>
 
