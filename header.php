@@ -31,7 +31,8 @@
 <div id="header">
 	<div class="box-sizing">
 		<div class="max-width">
-		<h2>Site header</h2>
+			<h2><?php esc_html_e( 'Site header', 'qldgovt' ); ?></h2>
+
 
 			<?php if ( get_header_image() ) : ?>
 				<a class="qg-coa" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
