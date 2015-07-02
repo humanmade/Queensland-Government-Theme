@@ -53,58 +53,26 @@
 			);
 			?>
 
+
 			<h2 id="site-name"><a href="/" accesskey="2">
 					<!--[if gte IE 7]><!--><img src="theme/site-name.png" height="28" alt="Site name"/><!--<![endif]-->
-					<!--[if lte IE 6]><img src="theme/site-name-ie6.png" height="28" alt="Site name" /><![endif]-->
+					<!--[if lte IE 6]><img src="theme/site-name-ie6.png" height="28" alt="Site name"/><![endif]-->
 					<img src="theme/site-name-print.png" height="28" class="print-version" alt=""/>
 				</a></h2>
-
 		</div></div></div>
 
 
 <div id="nav-site"><div class="max-width">
 		<h2>Site navigation</h2>
-		<ul>
-			<li><a href="index.html">Home</a>
-				<ul>
-					<li><a href="#">Unordered list</a></li>
-					<li><a href="#">Unordered list item 2</a></li>
-					<li><a href="#">Unordered </a></li>
-					<li><a href="#">Unordered list item 4</a></li>
-				</ul>
-			</li>
-			<li><a href="index.html">Menu item 2</a>
-				<ul>
-					<li><a href="#">Unordered list item 2.1.1</a></li>
-					<li><a href="#">Unordered list </a></li>
-				</ul>
-			</li>
-			<li><a href="index.html">Menu item 3</a>
-				<ul>
-					<li><a href="#">Unordered</a></li>
-					<li><a href="#">Unordered list item 2.2</a></li>
-				</ul>
-			</li>
-			<li><a href="index.html">Menu item 4</a></li>
-			<li><a href="index.html">Themes</a>
-				<ul>
-					<li><a href="../template/xhtml-3column.html">Bare</a></li>
-					<li><a href="../greyscale/xhtml-3column.html">Greyscale</a></li>
-					<li><a href="../bluesteel/xhtml-3column.html">Blue Steel</a></li>
-					<li><a href="../supergreen/xhtml-3column.html">Supergreen</a></li>
-				</ul>
-			</li>
-			<li><a href="index.html">Page models</a>
-				<ul>
-					<li><a href="xhtml-1column.html">1 column</a></li>
-					<li><a href="xhtml-2column.html">2 column</a></li>
-					<li><a href="xhtml-3column.html">3 column</a></li>
-					<li><a href="xhtml-text.html">Text content</a></li>
-					<li><a href="xhtml-accessibility.html">Accessibility statement</a></li>
-					<li><a href="xhtml-applications.html">Applications</a></li>
-					<li><a href="xhtml-search-results.html">Search results</a></li>
-					<li><a href="xhtml-video.html">Video</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div></div>
+
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location'    => 'main',
+				'menu_id'           => '',
+				'fallback_cb'       => '',
+			)
+		);
+		?>
+
+</div></div>
