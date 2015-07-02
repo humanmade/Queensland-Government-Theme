@@ -6,8 +6,8 @@
 
 			<div class="page-options" id="pre-page-options">
 				<ul>
-					<li><a href="#"><?php esc_html_e( 'Share' , 'qldgovt' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_post_comments_feed_link() ); ?>"><?php esc_html_e( 'Subscribe' ,'qldgovt' ); ?></a>
+					<li><a href="#"><?php esc_html_e( 'Share', 'qldgovt' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_post_comments_feed_link() ); ?>"><?php esc_html_e( 'Subscribe', 'qldgovt' ); ?></a>
 						<ul>
 							<li><a href="<?php echo esc_url( get_post_comments_feed_link() ); ?>"><?php esc_html_e( 'RSS feed', 'qldgovt' ); ?></a></li>
 							<li><a href="<?php echo esc_url( get_post_comments_feed_link( null, 'atom' ) ); ?>"><?php esc_html_e( 'Atom feed', 'qldgovt' ); ?></a></li>
