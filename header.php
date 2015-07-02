@@ -8,13 +8,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" />
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script>
-	<![endif]-->
+	<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" /><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script><![endif]-->
 
 	<?php wp_head(); ?>
 
@@ -33,8 +28,10 @@
 	</ul>
 </div>
 
-<div id="header"><div class="box-sizing"><div class="max-width">
-			<h2>Site header</h2>
+<div id="header">
+	<div class="box-sizing">
+		<div class="max-width">
+		<h2>Site header</h2>
 
 			<?php if ( get_header_image() ) : ?>
 				<a class="qg-coa" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -62,7 +59,8 @@
 	</div>
 </div>
 
-<div id="nav-site"><div class="max-width">
+<div id="nav-site">
+	<div class="max-width">
 		<h2><?php esc_html_e( 'Site navigation', 'qldgovt' ); ?></h2>
 
 		<?php
@@ -75,4 +73,5 @@
 		);
 		?>
 
-</div></div>
+	</div>
+</div>
