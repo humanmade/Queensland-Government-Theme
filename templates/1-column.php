@@ -8,8 +8,6 @@
 
 			<?php get_template_part( 'parts/content', get_post_type() ); ?>
 
-			<?php dynamic_sidebar( 'single-primary' ); ?>
-
 			<?php get_template_part( 'parts/properties' ); ?>
 
 			<!-- @TODO comments -->

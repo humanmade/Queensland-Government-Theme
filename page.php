@@ -39,15 +39,10 @@ the_post();
 					<li><a href="index.html">Menu item</a></li>
 				</ul>
 
-				<?php if ( is_active_sidebar( 'single-primary' ) ) { ?>
-
-					<div id="nav-section">
-						<?php dynamic_sidebar( 'single-primary' ); ?>
-					</div><!-- #nav-section -->
-
-				<?php } ?>
-
 			</div><!-- .box-sizing -->
+
+			<?php dynamic_sidebar( 'single-primary' ); ?>
+
 		</div><!-- #nav-section -->
 
 		<div id="content-container">
