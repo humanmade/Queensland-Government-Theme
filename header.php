@@ -53,17 +53,17 @@
 			);
 			?>
 
-
 			<h2 id="site-name">
 				<a href="/" accesskey="2">
 					<p><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
 				</a>
 			</h2>
-		</div></div></div>
-
+		</div>
+	</div>
+</div>
 
 <div id="nav-site"><div class="max-width">
-		<h2>Site navigation</h2>
+		<h2><?php esc_html_e( 'Site navigation', 'qldgovt' ); ?></h2>
 
 		<?php
 		wp_nav_menu(
