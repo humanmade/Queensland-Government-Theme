@@ -2,7 +2,7 @@
 	<div class="article">
 		<div class="box-sizing">
 
-			<h1><?php the_title(); ?></h1>
+			<?php the_title( '<h1>', '</h1>' ); ?>
 
 			<div class="page-options" id="pre-page-options">
 				<ul>
