@@ -36,11 +36,11 @@
 <div id="header"><div class="box-sizing"><div class="max-width">
 			<h2>Site header</h2>
 
-			<a id="qg-coa" href="http://www.qld.gov.au/">
-				<!--[if gte IE 7]><!--><img src="theme/qg-coa.png" width="287" height="50" alt="Queensland Government"/><!--<![endif]-->
-				<!--[if lte IE 6]><img src="theme/qg-coa-ie6.png" width="287" height="50" alt="Queensland Government" /><![endif]-->
-				<img src="cue/images/qg-coa-print.png" class="print-version" alt=""/>
-			</a>
+			<?php if ( get_header_image() ) : ?>
+				<a class="qg-coa" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+				</a>
+			<?php endif; // End header image check. ?>
 
 			<?php
 			wp_nav_menu(

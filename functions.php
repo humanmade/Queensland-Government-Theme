@@ -119,3 +119,8 @@ if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
 		return $searchform;
 	}
 }
+
+/* Let's add the includes. Unused includes will be deleted during setup  */
+foreach ( glob( get_template_directory() . '/inc/*.php' ) as $filename ) {
+	require_once $filename;
+}
