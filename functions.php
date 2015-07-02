@@ -95,12 +95,16 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 		$suffix = SCRIPT_DEBUG ? '' : '.min';
 
 		wp_enqueue_style( 'main', get_stylesheet_uri() );
-		wp_enqueue_script( 'jquery' );
-		wp_register_script( 'qg', get_template_directory_uri() . "/assets/js/qg{$suffix}.js", array( 'jquery' ), '1.0', true );
-		wp_enqueue_script( 'qg' );
+		wp_enqueue_script( 'qg', get_template_directory_uri() . "/assets/js/qg{$suffix}.js", array(
+			'jquery',
+		), '1.0', true );
+
 		wp_enqueue_style( 'ie-stylesheet', get_template_directory_uri() . "/assets/css/qg-ie{$suffix}.css", array() );
 		wp_style_add_data( 'ie-stylesheet', 'conditional', 'lt IE 8' );
-		wp_enqueue_script( 'ie-layout', get_template_directory_uri() . "/assets/js/ie-layout{$suffix}.js", array() );
+
+		wp_enqueue_script( 'ie-layout', get_template_directory_uri() . "/assets/js/ie-layout{$suffix}.js", array(
+			'jquery',
+		) );
 		wp_script_add_data( 'ie-layout', 'conditional', 'lt IE 9' );
 
 	}
