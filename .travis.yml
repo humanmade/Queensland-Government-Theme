@@ -19,14 +19,10 @@ php:
 # Declare which versions of WordPress to test against.
 # Also declare whether or not to test in Multisite.
 env:
-  # Trunk
+  # Latest stable WordPress
   # @link https://github.com/WordPress/WordPress
   - WP_VERSION=master WP_MULTISITE=0
   - WP_VERSION=master WP_MULTISITE=1
-  # WordPress 4.2
-  # @link https://github.com/WordPress/WordPress/tree/4.2-branch
-  - WP_VERSION=4.2 WP_MULTISITE=0
-  - WP_VERSION=4.2 WP_MULTISITE=1
   # WordPress 4.1
   # @link https://github.com/WordPress/WordPress/tree/4.1-branch
   - WP_VERSION=4.1 WP_MULTISITE=0
