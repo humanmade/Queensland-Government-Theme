@@ -27,9 +27,9 @@
 <div id="access">
 	<h2><?php __( 'Skip links and keyboard navigation', 'qldgovt' ); ?></h2>
 	<ul>
-		<li><a href="#content"><?php __( 'Skip to content', 'qldgovt' ); ?></a></li>
-		<li><a href="#nav-site"><?php __( 'Skip to navigation', 'qldgovt' ); ?></a></li>
-		<li><a href="#footer"><?php __( 'Skip to footer', 'qldgovt' ); ?></a></li>
+		<li><a href="#content"><?php esc_html_e( 'Skip to content', 'qldgovt' ); ?></a></li>
+		<li><a href="#nav-site"><?php esc_html_e( 'Skip to navigation', 'qldgovt' ); ?></a></li>
+		<li><a href="#footer"><?php esc_html_e( 'Skip to footer', 'qldgovt' ); ?></a></li>
 	</ul>
 </div>
 
