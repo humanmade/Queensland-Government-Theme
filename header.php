@@ -10,12 +10,11 @@
 
 	<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" /><![endif]-->
 	<!--[if lt IE 9]><script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script><![endif]-->
-
 	<?php wp_head(); ?>
 
 </head>
 
-<body id="qld-gov-au">
+<body id="qld-gov-au" <?php body_class(); ?>>
 
 <!--[if lt IE 9]><script type="text/javascript">jQuery && jQuery.transformer({addClasses:true})</script><![endif]-->
 
