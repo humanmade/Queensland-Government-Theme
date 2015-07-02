@@ -96,6 +96,8 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 		wp_enqueue_style( 'medium', get_template_directory_uri() . '/assets/css/layout-medium.css', array( 'base' ), '1.0' );
 		wp_enqueue_style( 'large', get_template_directory_uri() . '/assets/css/layout-large.css', array( 'base' ), '1.0' );
 		wp_enqueue_script( 'jquery' );
+		wp_register_script( 'qg', get_template_directory_uri() . '/assets/js/qg.js', array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'qg' );
 	}
 }
 
@@ -119,6 +121,23 @@ if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
 		return $searchform;
 	}
 }
+
+/**
+ * Register the widget areas.
+ *
+ */
+function qldgovt_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Footer Widget Area', 'qldgovt' ),
+		'id'            => 'footer-widget-area',
+		'description'   => __( 'Footer widget area', 'qldgovt' ),
+		'before_widget' => '<div id="%1$s" class="section widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'qldgovt_widgets_init' );
 
 /* Let's add the includes. Unused includes will be deleted during setup  */
 foreach ( glob( get_template_directory() . '/inc/*.php' ) as $filename ) {
