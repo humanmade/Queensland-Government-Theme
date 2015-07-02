@@ -2,6 +2,7 @@
 /**
  * Our super wonderful Header
  */
+$suffix = SCRIPT_DEBUG ? '' : '.min';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
@@ -9,7 +10,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 	<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/assets/css/qg-ie.css" type="text/css" media="all" /><![endif]-->
-	<!--[if lt IE 9]><script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout.js"></script><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="<?php echo esc_url_raw( get_template_directory_uri() ); ?>/js/ie-layout<?php echo $suffix; ?>.js"></script><![endif]-->
 	<?php wp_head(); ?>
 
 </head>
