@@ -13,9 +13,9 @@
 
 		<div id="content-container">
 
-			<?php get_template_part( 'breadcrumbs' ); ?>
+			<?php get_template_part( 'parts/breadcrumbs' ); ?>
 
-			<?php get_template_part( 'content', get_post_type() ); ?>
+			<?php get_template_part( 'parts/content', get_post_type() ); ?>
 
 			<?php if ( is_active_sidebar( 'single-secondary' ) ) { ?>
 
@@ -25,7 +25,7 @@
 
 			<?php } ?>
 
-			<?php get_template_part( 'properties' ); ?>
+			<?php get_template_part( 'parts/properties' ); ?>
 
 			<!-- @TODO comments -->
 			<div id="page-feedback">
