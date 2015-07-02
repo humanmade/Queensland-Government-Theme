@@ -98,6 +98,8 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 		wp_enqueue_script( 'jquery' );
 		wp_register_script( 'qg', get_template_directory_uri() . "/assets/js/qg{$suffix}.js", array( 'jquery' ), '1.0', true );
 		wp_enqueue_script( 'qg' );
+		wp_enqueue_style( 'ie-stylesheet', get_template_directory_uri() . '/assets/css/qg-ie.css', array() );
+		wp_style_add_data( 'ie-stylesheet', 'conditional', 'lt IE 8' );
 
 	}
 }
