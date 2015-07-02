@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+
+get_header();
+the_post();
+
+?>
 
 <div id="page-container">
 	<div class="max-width">
