@@ -3,6 +3,7 @@ if (typeof jQuery == "undefined") {
 		console.log("Keyboard Focus plugin could not be initialised because jQuery is not available")
 	}
 } else {
+	$ = jQuery;
 	jQuery.keyFocus = {};
 	jQuery.keyFocus.conf = {
 		keyFocusClass: "keyboard-focus",
