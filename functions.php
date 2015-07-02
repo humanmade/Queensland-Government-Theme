@@ -105,6 +105,24 @@ add_action( 'wp_enqueue_scripts', 'qldgovt_enqueue_scripts' );
  */
 function qldgovt_widgets_init() {
 	register_sidebar( array(
+		'name'          => __( 'Single Page Primary Widget Area', 'qldgovt' ),
+		'id'            => 'single-primary',
+		'description'   => __( 'Single Page Primary Widget Area', 'qldgovt' ),
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Single Page Secondary Widget Area', 'qldgovt' ),
+		'id'            => 'single-secondary',
+		'description'   => __( 'Single Page Secondary Widget Area', 'qldgovt' ),
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'qldgovt' ),
 		'id'            => 'footer-widget-area',
 		'description'   => __( 'Footer widget area', 'qldgovt' ),
