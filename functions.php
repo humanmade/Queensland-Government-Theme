@@ -155,6 +155,24 @@ function qldgovt_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
+		'name'          => __( 'Archive Primary Widget Area', 'qldgovt' ),
+		'id'            => 'archive-primary',
+		'description'   => __( 'Archive Primary Widget Area', 'qldgovt' ),
+		'before_widget' => '<div id="%1$s" class="%2$s box-sizing">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Archive Secondary Widget Area', 'qldgovt' ),
+		'id'            => 'archive-secondary',
+		'description'   => __( 'Archive Secondary Widget Area', 'qldgovt' ),
+		'before_widget' => '<div id="%1$s" class="%2$s box-sizing">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
 		'name'          => __( 'Single Page Primary Widget Area', 'qldgovt' ),
 		'id'            => 'single-primary',
 		'description'   => __( 'Single Page Primary Widget Area', 'qldgovt' ),

@@ -3,10 +3,10 @@
 <div id="page-container">
 	<div class="max-width">
 
-		<?php if ( is_active_sidebar( 'home-primary' ) ) { ?>
+		<?php if ( is_active_sidebar( 'archive-primary' ) ) { ?>
 
 			<div id="nav-section">
-				<?php dynamic_sidebar( 'home-primary' ); ?>
+				<?php dynamic_sidebar( 'archive-primary' ); ?>
 			</div><!-- #nav-section -->
 
 		<?php } ?>
@@ -17,6 +17,14 @@
 
 			<div id="content">
 
+				<div class="article">
+					<div class="box-sizing">
+
+						<?php the_archive_title( '<h1>', '</h1>' ); ?>
+
+					</div><!-- .box-sizing -->
+				</div><!-- .article -->
+
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'parts/loop', get_post_type() ); ?>
@@ -25,10 +33,10 @@
 
 			</div><!-- #content -->
 
-			<?php if ( is_active_sidebar( 'home-secondary' ) ) { ?>
+			<?php if ( is_active_sidebar( 'archive-secondary' ) ) { ?>
 
 				<div class="aside">
-					<?php dynamic_sidebar( 'home-secondary' ); ?>
+					<?php dynamic_sidebar( 'archive-secondary' ); ?>
 				</div>
 
 			<?php } ?>

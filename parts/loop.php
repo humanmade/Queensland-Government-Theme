@@ -1,13 +1,11 @@
-<div id="content">
-	<div class="article">
-		<div class="box-sizing">
+<div class="article">
+	<div class="box-sizing">
 
-			<?php the_title( '<h1>', '</h1>' ); ?>
+		<?php the_title( '<h2>', '</h2>' ); ?>
 
-			<div class="section">
-				<?php the_content(); ?>
-			</div><!-- .section -->
+		<div class="section">
+			<?php the_content(); ?>
+		</div><!-- .section -->
 
-		</div><!-- .box-sizing -->
-	</div><!-- .article -->
-</div><!-- #content -->
+	</div><!-- .box-sizing -->
+</div><!-- .article -->
