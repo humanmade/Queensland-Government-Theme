@@ -12,6 +12,21 @@ function qldgovt_the_page_size() {
  * @return false|int|string
  */
 function qldgovt_get_the_page_size() {
+	$page_size = get_post_meta( get_the_ID(), '_page_size', true );
+
+	if ( empty ( $page_size ) ) {
+		$page_size = qldgovt_save_content_size( get_the_ID() );
+	}
+
+	return $page_size;
+}
+
+/**
+ * Calculate the size of the content in bytes.
+ *
+ * @return false|int|string
+ */
+function qldgovt_calculate_page_size() {
 	$page = get_post( get_the_ID() );
 	$content_length = mb_strlen( $page->post_content );
 	$content_length = size_format( $content_length );
@@ -73,3 +88,16 @@ function gldgovt_get_the_ending_index(){
 	}
 	return $ending_index;
 }
+
+/**
+ * Save the page size as post meta.
+ *
+ * @param $post_id
+ */
+function qldgovt_save_content_size( $post_id ){
+	$page_size = qldgovt_calculate_page_size();
+
+	add_post_meta( $post_id, '_page_size', $page_size, true );
+}
+
+add_action( 'save_post', 'qldgovt_save_content_size' );
