@@ -880,6 +880,7 @@ h2.resultset-title {
     padding: .2em 0 .3em 0;
     display: block;
     font-size: 120%;
+    clear: both;
 }
 
 .search-box-group {
