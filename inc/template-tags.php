@@ -97,7 +97,7 @@ function gldgovt_get_the_ending_index(){
 function qldgovt_save_content_size( $post_id ){
 	$page_size = qldgovt_calculate_page_size();
 
-	add_post_meta( $post_id, '_page_size', $page_size, true );
+	add_post_meta( $post_id, '_page_size', $page_size );
 }
 
 add_action( 'save_post', 'qldgovt_save_content_size' );
