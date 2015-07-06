@@ -1,3 +1,12 @@
+<?php
+/**
+ * The default template for displaying content
+ *
+ * Used for both single and index/archive/search.
+ *
+ * @package WordPress
+ */
+?>
 <div id="content">
 	<div class="article">
 		<div class="box-sizing">
