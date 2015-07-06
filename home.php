@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Our template for the blog loop
+ */
+get_header(); ?>
 
 <div id="page-container">
 	<div class="max-width">
