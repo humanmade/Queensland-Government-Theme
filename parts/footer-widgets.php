@@ -2,6 +2,7 @@
 /**
  * The Footer Widget Area
  *
+ * @package WordPress
  */
 
 if ( ! is_active_sidebar( 'footer-widget-area' ) ) {
@@ -9,4 +10,3 @@ if ( ! is_active_sidebar( 'footer-widget-area' ) ) {
 }
 
 dynamic_sidebar( 'footer-widget-area' );
-
