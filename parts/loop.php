@@ -1,3 +1,8 @@
+<?php
+/**
+ * The main content loop.
+ */
+?>
 <div class="article">
 	<div class="box-sizing">
 
