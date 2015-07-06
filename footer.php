@@ -1,3 +1,8 @@
+<?php
+/**
+ * The template for displaying the footer
+ */
+?>
 <div id="footer">
 	<div id="fat-footer">
 		<div class="max-width">
