@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (not found)
+ */
+
+get_header(); ?>
 
 <div id="page-container">
 	<div class="max-width">
