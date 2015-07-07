@@ -20,9 +20,9 @@ get_header(); ?>
 							<p><?php esc_html_e( 'You can:', 'qldgovt' ); ?></p>
 							<ul>
 								<li><?php
-									printf( __( 'Return to the <a href="%s">home page</a> and look for links to the information;', 'qldgovt' ),
-										esc_url( home_url() )
-									);
+									esc_html_e( 'Return to the ', 'qldgovt' );
+									printf( '<a href="%s">home page</a>', esc_url( home_url() ) );
+									esc_html_e( ' and look for links to the information;', 'qldgovt' );
 								?></li>
 								<li><?php esc_html_e( 'Use the search functionality at the top of the page to search across the site; or', 'qldgovt' ); ?></li>
 								<li><?php esc_html_e( 'Double check the address.', 'qldgovt' ); ?></li>
