@@ -118,7 +118,7 @@ if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
 	/**
 	 * Header menu uses a slightly different search form.
 	 */
-	function qldgovt_header_searchform(){
+	function qldgovt_header_searchform() {
 
 		$searchform =
 		'<li class="last-item">
