@@ -86,10 +86,13 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 			'caption',
 		) );
 	}
-endif; // qldgovt_setup
+endif;
 
 add_action( 'after_setup_theme', 'qldgovt_setup' );
 
+/**
+ * Enqueue our scripts and CSS
+ */
 if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 	function qldgovt_enqueue_scripts() {
 
