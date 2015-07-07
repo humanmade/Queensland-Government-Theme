@@ -88,10 +88,10 @@ endif;
 
 add_action( 'after_setup_theme', 'qldgovt_setup' );
 
-/**
- * Enqueue our scripts and CSS.
- */
 if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
+	/**
+	 * Enqueue our scripts and CSS.
+	 */
 	function qldgovt_enqueue_scripts() {
 
 		$suffix = SCRIPT_DEBUG ? '' : '.min';
@@ -114,10 +114,10 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'qldgovt_enqueue_scripts' );
 
-/**
- * Header menu uses a slightly different search form.
- */
 if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
+	/**
+	 * Header menu uses a slightly different search form.
+	 */
 	function qldgovt_header_searchform(){
 
 		$searchform =
