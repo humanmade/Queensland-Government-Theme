@@ -6,6 +6,7 @@
  *
  * @package WordPress
  */
+
 ?>
 <div id="content">
 	<div class="article">
