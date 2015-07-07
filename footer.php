@@ -1,7 +1,10 @@
 <?php
 /**
  * The template for displaying the footer
+ *
+ * @package WordPress
  */
+
 ?>
 <div id="footer">
 	<div id="fat-footer">
