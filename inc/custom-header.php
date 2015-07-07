@@ -1,9 +1,13 @@
 <?php
 /**
- * Set up the WordPress core custom header feature.
+ * Custom header functions
+ *
  * @package WordPress
  */
 
+/**
+ * Set up the WordPress core custom header feature.
+ */
 function qldgovt_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'qldgovt_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/assets/images/qg-coa.png',
