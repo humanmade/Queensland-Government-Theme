@@ -135,7 +135,6 @@ if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
 
 /**
  * Register the widget areas.
- *
  */
 function qldgovt_widgets_init() {
 	register_sidebar( array(
