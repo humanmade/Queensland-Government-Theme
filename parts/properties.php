@@ -1,3 +1,8 @@
+<?php
+/**
+ * A template part for the page/post properties.
+ */
+?>
 <div id="document-properties">
 	<div class="box-sizing">
 		<dl>
