@@ -1,4 +1,9 @@
 <?php
+/**
+ * Template for displaying all single posts
+ *
+ * @package WordPress
+ */
 
 get_header();
 the_post();

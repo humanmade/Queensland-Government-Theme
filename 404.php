@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (not found)
+ *
+ * @package WordPress
+ */
+
+get_header(); ?>
 
 <div id="page-container">
 	<div class="max-width">
@@ -7,18 +14,18 @@
 				<div class="article">
 					<div class="box-sizing">
 
-						<h1><?php esc_html_e( 'The page cannot be found', 'hmcue' ); ?></h1>
+						<h1><?php esc_html_e( 'The page cannot be found', 'qldgovt' ); ?></h1>
 
 						<div class="section">
-							<p><?php _e( 'You can:', 'hmcue' ); ?></p>
+							<p><?php esc_html_e( 'You can:', 'qldgovt' ); ?></p>
 							<ul>
 								<li><?php
-									printf( __( 'Return to the <a href="%s">home page</a> and look for links to the information;', 'hmcue' ),
-										esc_url( home_url() )
-									);
+									esc_html_e( 'Return to the ', 'qldgovt' );
+									printf( '<a href="%s">home page</a>', esc_url( home_url() ) );
+									esc_html_e( ' and look for links to the information;', 'qldgovt' );
 								?></li>
-								<li><?php _e( 'Use the search functionality at the top of the page to search across the site; or', 'hmcue' ); ?></li>
-								<li><?php _e( 'Double check the address.', 'hmcue' ); ?></li>
+								<li><?php esc_html_e( 'Use the search functionality at the top of the page to search across the site; or', 'qldgovt' ); ?></li>
+								<li><?php esc_html_e( 'Double check the address.', 'qldgovt' ); ?></li>
 							</ul>
 						</div><!-- .section -->
 

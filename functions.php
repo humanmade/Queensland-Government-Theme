@@ -20,11 +20,11 @@
  * For more information on hooks, actions, and filters,
  * {@link https://codex.wordpress.org/Plugin_API}
  *
+ * @package WordPress
  */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
- *
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 660;
@@ -39,7 +39,6 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function qldgovt_setup() {
-
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -85,11 +84,14 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 			'caption',
 		) );
 	}
-endif; // qldgovt_setup
+endif;
 
 add_action( 'after_setup_theme', 'qldgovt_setup' );
 
 if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
+	/**
+	 * Enqueue our scripts and CSS.
+	 */
 	function qldgovt_enqueue_scripts() {
 
 		$suffix = SCRIPT_DEBUG ? '' : '.min';
@@ -112,11 +114,11 @@ if ( ! function_exists( 'qldgovt_enqueue_scripts' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'qldgovt_enqueue_scripts' );
 
-/**
- * Header menu uses a slightly different search form
- */
 if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
-	function qldgovt_header_searchform(){
+	/**
+	 * Header menu uses a slightly different search form.
+	 */
+	function qldgovt_header_searchform() {
 
 		$searchform =
 		'<li class="last-item">
@@ -133,7 +135,6 @@ if ( ! function_exists( 'qldgovt_header_searchform' ) ) {
 
 /**
  * Register the widget areas.
- *
  */
 function qldgovt_widgets_init() {
 	register_sidebar( array(

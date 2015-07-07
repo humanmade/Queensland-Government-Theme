@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Our template for the blog loop
+ *
+ * @package WordPress
+ */
+
+get_header(); ?>
 
 <div id="page-container">
 	<div class="max-width">

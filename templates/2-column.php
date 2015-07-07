@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: 2 Column Page
+ *
+ * @package WordPress
+ */
+
+get_header(); ?>
 
 <div id="page-container">
 	<div class="max-width">

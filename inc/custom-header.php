@@ -1,5 +1,11 @@
 <?php
 /**
+ * Custom header functions
+ *
+ * @package WordPress
+ */
+
+/**
  * Set up the WordPress core custom header feature.
  */
 function qldgovt_custom_header_setup() {
@@ -55,7 +61,7 @@ if ( ! function_exists( 'qldgovt_header_style' ) ) :
 		</style>
 	<?php
 	}
-endif; // qldgovt_header_style
+endif;
 
 if ( ! function_exists( 'qldgovt_admin_header_style' ) ) :
 	/**
@@ -83,7 +89,7 @@ if ( ! function_exists( 'qldgovt_admin_header_style' ) ) :
 		</style>
 	<?php
 	}
-endif; // qldgovt_admin_header_style
+endif;
 
 if ( ! function_exists( 'qldgovt_admin_header_image' ) ) :
 	/**
@@ -104,4 +110,4 @@ if ( ! function_exists( 'qldgovt_admin_header_image' ) ) :
 		</div>
 	<?php
 	}
-endif; // qldgovt_admin_header_image
+endif;

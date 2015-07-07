@@ -1,3 +1,11 @@
+<?php
+/**
+ * A template part to assist with displaying our breadcrumbs.
+ *
+ * @package WordPress
+ */
+
+?>
 <div id="breadcrumbs">
 
 	<h2>You are here:</h2>
