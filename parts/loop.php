@@ -1,7 +1,10 @@
 <?php
 /**
  * The main content loop.
+ *
+ * @package WordPress
  */
+
 ?>
 <div class="article">
 	<div class="box-sizing">
