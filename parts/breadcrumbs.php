@@ -1,6 +1,8 @@
 <?php
 /**
  * A template part to assist with displaying our breadcrumbs.
+ *
+ * @package WordPress
  */
 
 ?>
