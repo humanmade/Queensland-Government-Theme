@@ -39,7 +39,6 @@ if ( ! function_exists( 'qldgovt_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function qldgovt_setup() {
-
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
