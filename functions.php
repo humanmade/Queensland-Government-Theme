@@ -20,6 +20,7 @@
  * For more information on hooks, actions, and filters,
  * {@link https://codex.wordpress.org/Plugin_API}
  *
+ * @package WordPress
  */
 
 /**
