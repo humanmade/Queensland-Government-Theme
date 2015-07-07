@@ -1,7 +1,10 @@
 <?php
 /**
  * Our template for the blog loop
+ *
+ * @package WordPress
  */
+
 get_header(); ?>
 
 <div id="page-container">
